@@ -1,0 +1,109 @@
+/**
+  |============================
+  | include css partials with
+  | default @import url()
+  |============================
+*/
+@import url('./reset.css');
+@import url('./vite-promo.css');
+@import url('./header.css');
+
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color: #242424;
+  background-color: rgba(255, 255, 255, 0.87);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+body{
+  background-color: #FFFFFF;
+  color: #434455;
+  box-sizing: border-box;
+}
+
+
+
+.gallery{
+  display: flex;
+  width: 1440px;
+  padding: 24px 156px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.gallery-item{
+  width: 360px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.gallery-image{
+  max-width: 100%;
+} 
+
+
+.feedback-form{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 24px;
+  width: 408px;
+}
+
+input, textarea{
+  display: block;
+  min-width: 360px;
+  display: flex;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  padding: 8px 16px;
+}
+
+input:active,
+input:focus,
+textarea:active,
+textarea:focus{
+  border-color:#000000;
+  outline: none;
+}
+
+input{
+  height: 40px;
+}
+textarea{
+  min-height: 80px;
+  max-width: 360px;
+}
+
+label{
+  color: #2E2F42;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+}
+
+button{
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  background-color: #4E75FF;
+  color: #ffffff;
+  box-shadow: none;
+  border: none;
+  border-radius: 8px;
+  margin-top: 16px;
+}
+button:hover{
+  background-color: #6C8CFF;
+}
